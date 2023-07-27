@@ -2,7 +2,22 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class UsuarioMovimentacao {
-    
+    /**
+     * Criação de Conta Bancaria
+     * Sintaxe - Desafio
+     * DIO - Trilha Java Básico
+     * 
+     * 
+     * @param conta      Classe ContaTerminal
+     * @param nomeCliente Nome do Cliente
+     * @param numCOnta     Numero da Conta
+     * @param numAgencia    Numero da Agencia (Pode ser caracteres)
+     * @param movimentacao    Movimentação efetuada
+     * @param saldo    Consolidado das movimentações realizadas
+     * @return "Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %.3f já está disponível para saque.", conta.nomeCliente, conta.numAgencia, conta.numCOnta, conta.saldo
+     * @author Vinicius Silva
+     * @Version 1.0
+     */
 
     public static void main(String[] args) {         
         CriaConta();
@@ -23,8 +38,10 @@ public class UsuarioMovimentacao {
        }
     return 0;
     }
-    
+
     private static void CriaConta() {
+    
+
     Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
     ContaTerminal conta = new ContaTerminal();
     System.out.println("Digite o seu Nome: ");
